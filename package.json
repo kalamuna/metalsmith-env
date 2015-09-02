@@ -1,0 +1,31 @@
+{
+  "name": "metalsmith-env",
+  "version": "0.0.1",
+  "description": "Metalsmith Environmental Variables Plugin",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "NODE_ENV=production mocha --no-timeouts && semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kalamuna/metalsmith-env"
+  },
+  "keywords": [
+    "metalsmith"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalamuna/metalsmith-env/issues"
+  },
+  "homepage": "https://github.com/kalamuna/metalsmith-env",
+  "devDependencies": {
+    "assert-dir-equal": "1.*",
+    "jstransformer-jade": "^0.1.0",
+    "metalsmith": "1.*",
+    "metalsmith-jstransformer": "^0.5.1",
+    "mocha": "*",
+    "semistandard": "^7.0.2"
+  }
+}
