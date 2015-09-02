@@ -25,4 +25,5 @@ function test (name, options) {
 
 describe('metalsmith-env', function () {
   test('basic');
+  test('npm_config');
 });

@@ -28,6 +28,9 @@
     "mocha": "*",
     "semistandard": "^7.0.2"
   },
+  "config": {
+    "foo": "bar"
+  },
   "dependencies": {
     "extend-shallow": "^2.0.1"
   }

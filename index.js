@@ -16,6 +16,7 @@ module.exports = function (opts) {
 
     // Inject all environmental variables into the metadata.
     extend(metadata, process.env);
+    console.log(process.env)
 
     // Done... Seriously.
     done();
