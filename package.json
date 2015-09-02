@@ -27,5 +27,8 @@
     "metalsmith-jstransformer": "^0.5.1",
     "mocha": "*",
     "semistandard": "^7.0.2"
+  },
+  "dependencies": {
+    "extend-shallow": "^2.0.1"
   }
 }

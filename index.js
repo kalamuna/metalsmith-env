@@ -1,3 +1,5 @@
+var extend = require('extend-shallow');
+
 /**
  * Metalsmith Environmental Variables Plugin
  *
@@ -11,12 +13,10 @@ module.exports = function (opts) {
   return function (files, metalsmith, done) {
     // Retrieve the metadata.
     var metadata = metalsmith.metadata();
-    // Register all the variables from process.env.
-    for (var i in process.env) {
-      // Add the variable.
-      // TODO: Do we need to clean anything?
-      metadata[i] = process.env[i];
-    }
+
+    // Inject all environmental variables into the metadata.
+    extend(metadata, process.env);
+
     // Done... Seriously.
     done();
   };
