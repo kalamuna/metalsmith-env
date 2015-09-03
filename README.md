@@ -33,8 +33,32 @@ metalsmith.use(env());
 
 ## Usage
 
-``` javascript
-// TODO: Add usage documentation.
+Once installed, all environment variables, from [`process.env`](https://nodejs.org/api/process.html#process_process_env), become available as [Metalsmith metadata](https://github.com/segmentio/metalsmith#metadata-api).
+
+### Example
+
+The following example uses [Jade](http://jade-lang.com) and [Metalsmith JSTransformer](https://github.com/RobLoach/metalsmith-jstransformer):
+
+#### `index.jade`
+``` jade
+---
+title: Environmental Variables
+---
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    h1= title
+    p This is the environmental variable "NODE_ENV":
+    code
+      pre= NODE_ENV
+```
+
+#### Build
+
+```
+$ NODE_ENV=production node_modules/.bin/metalsmith
 ```
 
 ## License
