@@ -61,6 +61,22 @@ html(lang="en")
 $ NODE_ENV=production node_modules/.bin/metalsmith
 ```
 
+#### Result
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Environmental Variables</title>
+  </head>
+  <body>
+    <h1>Environmental Variables</h1>
+    <p>This is the environmental variable "NODE_ENV":</p>
+    <code><pre>production</pre></code>
+  </body>
+</html>
+```
+
 ## License
 
 MIT
