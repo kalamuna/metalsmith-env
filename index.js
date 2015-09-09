@@ -6,16 +6,13 @@ var extend = require('extend-shallow');
  * Register all environmental variables to Metalsmith's metadata.
  */
 module.exports = function (opts) {
-  // Prepare the options.
-  opts = opts || {};
-
   // Execute the plugin.
   return function (files, metalsmith, done) {
     // Retrieve the metadata.
     var metadata = metalsmith.metadata();
 
-    // Inject all environmental variables into the metadata.
-    extend(metadata, process.env);
+    // Inject all environmental variables and options into the metadata.
+    extend(metadata, process.env, opts || {});
 
     // Done... Seriously.
     done();

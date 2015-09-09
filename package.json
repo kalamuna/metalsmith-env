@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Metalsmith Environmental Variables Plugin",
   "files": [
     "index.js"
@@ -23,7 +23,7 @@
   "devDependencies": {
     "assert-dir-equal": "1.*",
     "jstransformer-jade": "^0.1.0",
-    "metalsmith": "1.*",
+    "metalsmith": "2.*",
     "metalsmith-jstransformer": "^0.5.1",
     "mocha": "*",
     "semistandard": "^7.0.2"

@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.1
+
+- Allow passing in options for the plugin
+
 ## v1.0.0
 
 - Add usage documentation
