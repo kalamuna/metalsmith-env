@@ -35,11 +35,25 @@ metalsmith.use(env());
 
 Once installed, all environment variables, from [`process.env`](https://nodejs.org/api/process.html#process_process_env), become available as [Metalsmith metadata](https://github.com/segmentio/metalsmith#metadata-api).
 
-### Example
+### Options
+
+#### `opts.variables`
+
+An array of default variables that will be available. Environmental variables will then override the default set.
+
+#### `opts.overrides`
+
+An array of variables that will completely override the given set of environmental variables.
+
+#### `opts.env`
+
+The assumed environmental variables, defaults to `process.env`.
+
+## Example
 
 The following example uses [Jade](http://jade-lang.com) and [Metalsmith JSTransformer](https://github.com/RobLoach/metalsmith-jstransformer):
 
-#### `index.jade`
+### `index.jade`
 ``` jade
 ---
 title: Environmental Variables
@@ -55,13 +69,13 @@ html(lang="en")
       pre= NODE_ENV
 ```
 
-#### Build
+### Build
 
 ```
 $ NODE_ENV=production node_modules/.bin/metalsmith
 ```
 
-#### Result
+### Result
 
 ``` html
 <!DOCTYPE html>

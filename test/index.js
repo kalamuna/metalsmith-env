@@ -9,7 +9,7 @@ function test (name, options) {
     // Build the Metalsmith environment.
     Metalsmith('test/fixtures/' + name)
       // Register the plugin.
-      .use(env(options || {}))
+      .use(env(options))
       // Use JSTransformers for content templating.
       .use(jstransformer())
       // Build the system.
@@ -27,6 +27,8 @@ describe('metalsmith-env', function () {
   test('basic');
   test('npm_config');
   test('options', {
-    npm_package_config_foo: 'bar overriden'
+    overrides: {
+      npm_package_config_foo: 'bar overriden'
+    }
   });
 });

@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0
+
+- Moved variable definition to either `opts.variables` and `opts.overrides`
+- Exposed changing `process.env`
+- Refactored documentation
+
 ## v1.0.1
 
 - Allow passing in options for the plugin
