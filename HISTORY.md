@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.x
+
+- Switched to [xo](https://www.npmjs.com/package/xo) for code standards
+
 ## v2.0.0
 
 - Moved variable definition to either `opts.variables` and `opts.overrides`

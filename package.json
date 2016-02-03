@@ -6,7 +6,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "NODE_ENV=production mocha --no-timeouts && semistandard"
+    "test": "NODE_ENV=production mocha --no-timeouts && xo --space"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,9 @@
     "assert-dir-equal": "1.*",
     "jstransformer-jade": "^0.1.0",
     "metalsmith": "2.*",
-    "metalsmith-jstransformer": "^0.5.1",
+    "metalsmith-jstransformer": "^0.6.0",
     "mocha": "*",
-    "semistandard": "^7.0.2"
+    "xo": "^0.12.1"
   },
   "config": {
     "foo": "bar"

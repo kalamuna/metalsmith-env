@@ -1,0 +1,5 @@
+{
+  "overrides": {
+    "npm_package_config_foo": "bar overriden"
+  }
+}

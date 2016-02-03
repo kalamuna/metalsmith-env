@@ -3,11 +3,11 @@ var env = require('../.');
 var jstransformer = require('metalsmith-jstransformer');
 var Metalsmith = require('metalsmith');
 
-function test (name, options) {
+function test(name, options) {
   /* globals it describe */
   it(name, function (done) {
     // Build the Metalsmith environment.
-    Metalsmith('test/fixtures/' + name)
+    new Metalsmith('test/fixtures/' + name)
       // Register the plugin.
       .use(env(options))
       // Use JSTransformers for content templating.
@@ -26,9 +26,5 @@ function test (name, options) {
 describe('metalsmith-env', function () {
   test('basic');
   test('npm_config');
-  test('options', {
-    overrides: {
-      npm_package_config_foo: 'bar overriden'
-    }
-  });
+  test('options', require('./fixtures/options/options.json'));
 });
