@@ -2,6 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/kalamuna/metalsmith-env/master.svg)](https://travis-ci.org/kalamuna/metalsmith-env)
 [![Dependency Status](https://david-dm.org/kalamuna/metalsmith-env.png)](https://david-dm.org/kalamuna/metalsmith-env)
+[![Greenkeeper badge](https://badges.greenkeeper.io/kalamuna/metalsmith-env.svg)](https://greenkeeper.io/)
 
 [Metalsmith](http://metalsmith.io) plugin to register all [environmental variables](https://nodejs.org/api/process.html#process_process_env) as metadata.
 
