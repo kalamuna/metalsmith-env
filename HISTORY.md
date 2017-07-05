@@ -1,8 +1,9 @@
 # Changelog
 
-## v2.0.x
+## v2.1.0
 
 - Switched to [xo](https://www.npmjs.com/package/xo) for code standards
+- Update dependencies
 
 ## v2.0.0
 
