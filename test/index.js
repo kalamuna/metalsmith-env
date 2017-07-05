@@ -1,11 +1,11 @@
-var assertDir = require('assert-dir-equal');
-var env = require('../.');
-var jstransformer = require('metalsmith-jstransformer');
-var Metalsmith = require('metalsmith');
+const assertDir = require('assert-dir-equal');
+const jstransformer = require('metalsmith-jstransformer');
+const Metalsmith = require('metalsmith');
+const env = require('..');
 
 function test(name, options) {
   /* globals it describe */
-  it(name, function (done) {
+  it(name, done => {
     // Build the Metalsmith environment.
     new Metalsmith('test/fixtures/' + name)
       // Register the plugin.
@@ -13,7 +13,7 @@ function test(name, options) {
       // Use JSTransformers for content templating.
       .use(jstransformer())
       // Build the system.
-      .build(function (err) {
+      .build(err => {
         if (err) {
           return done(err);
         }
@@ -23,7 +23,7 @@ function test(name, options) {
   });
 }
 
-describe('metalsmith-env', function () {
+describe('metalsmith-env', () => {
   test('basic');
   test('npm_config');
   test('options', require('./fixtures/options/options.json'));
