@@ -32,6 +32,6 @@
     "foo": "bar"
   },
   "dependencies": {
-    "extend-shallow": "^2.0.1"
+    "extend-shallow": "^3.0.0"
   }
 }
