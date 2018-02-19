@@ -1,12 +1,13 @@
 {
   "name": "metalsmith-env",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Metalsmith Environmental Variables Plugin",
   "files": [
     "index.js"
   ],
   "scripts": {
-    "test": "NODE_ENV=production mocha --no-timeouts && xo --space"
+    "test": "NODE_ENV=production mocha --no-timeouts",
+    "posttest": "xo --space=2"
   },
   "repository": {
     "type": "git",
