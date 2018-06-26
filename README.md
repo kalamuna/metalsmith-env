@@ -1,6 +1,6 @@
-# Metalsmith Enviromental Variables Plugin [![NPM version](https://img.shields.io/npm/v/metalsmith-env.svg)](https://www.npmjs.org/package/metalsmith-env)
+# Metalsmith Enviromental Variables Plugin [![npm version](https://badge.fury.io/js/metalsmith-env.svg)](https://badge.fury.io/js/metalsmith-env)
 
-[![Build Status](https://img.shields.io/travis/kalamuna/metalsmith-env/master.svg)](https://travis-ci.org/kalamuna/metalsmith-env)
+[![Build Status](https://travis-ci.org/kalamuna/metalsmith-env.svg?branch=master)](https://travis-ci.org/kalamuna/metalsmith-env)
 [![Dependency Status](https://david-dm.org/kalamuna/metalsmith-env.png)](https://david-dm.org/kalamuna/metalsmith-env)
 [![Greenkeeper badge](https://badges.greenkeeper.io/kalamuna/metalsmith-env.svg)](https://greenkeeper.io/)
 
