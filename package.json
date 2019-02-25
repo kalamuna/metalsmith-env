@@ -25,7 +25,7 @@
     "assert-dir-equal": "1.*",
     "jstransformer-jade": "^0.1.2",
     "metalsmith": "2.*",
-    "metalsmith-jstransformer": "^0.13.0",
+    "metalsmith-jstransformer": "^0.13.2",
     "mocha": "*",
     "xo": "*"
   },
@@ -33,6 +33,6 @@
     "foo": "bar"
   },
   "dependencies": {
-    "extend-shallow": "^3.0.0"
+    "extend-shallow": "^3.0.2"
   }
 }

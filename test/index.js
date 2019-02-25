@@ -17,6 +17,7 @@ function test(name, options) {
         if (err) {
           return done(err);
         }
+
         assertDir('test/fixtures/' + name + '/expected', 'test/fixtures/' + name + '/build');
         return done();
       });
