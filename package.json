@@ -27,7 +27,7 @@
     "metalsmith": "2.*",
     "metalsmith-jstransformer": "^1.0.0",
     "mocha": "*",
-    "xo": "*"
+    "xo": ">=0.28.2"
   },
   "config": {
     "foo": "bar"
