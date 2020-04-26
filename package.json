@@ -26,7 +26,7 @@
     "jstransformer-jade": "^0.1.2",
     "metalsmith": "2.*",
     "metalsmith-jstransformer": "^1.0.0",
-    "mocha": "*",
+    "mocha": ">=7.1.2",
     "xo": "*"
   },
   "config": {
