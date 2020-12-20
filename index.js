@@ -9,10 +9,11 @@ const extend = require('extend-shallow');
  *
  * @returns {function} A function to initiate the Metalsmith env plugin.
  */
-module.exports = function (opts) {
-  const options = opts || {};
+module.exports = function (options) {
+  options = options || {};
   const variables = options.variables || {};
   const overrides = options.overrides || {};
+  const key = options.metadatakey;
 
   // Execute the plugin.
   return function (files, metalsmith, done) {
@@ -20,7 +21,13 @@ module.exports = function (opts) {
     const env = options.env || process.env;
 
     // Retrieve the metadata.
-    const metadata = metalsmith.metadata();
+    let metadata = metalsmith.metadata();
+
+    if (key) {
+      // Merge into existing key or create new
+      metadata[key] = metadata[key] || {};
+      metadata = metadata[key];
+    }
 
     // Inject all environmental variables and options into the metadata.
     extend(metadata, variables, env, overrides);

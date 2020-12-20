@@ -1,0 +1,13 @@
+---
+title: Custom metadata key
+pretty: true
+---
+doctype html
+html(lang="en")
+  head
+    title= title
+  body
+    h1= title
+    p This is the environmental variable "npm_package_config_foo":
+    code
+      pre= env.npm_package_config_foo

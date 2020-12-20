@@ -28,4 +28,5 @@ describe('metalsmith-env', () => {
   test('basic');
   test('npm_config');
   test('options', require('./fixtures/options/options.json'));
+  test('metadatakey', require('./fixtures/metadatakey/options.json'));
 });
