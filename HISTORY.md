@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.2.0 - Unreleased
+
+- Allow storing the environmental variables under a `metadata[metadatakey]` instead of `metadata` (by [webketje](https://github.com/webketje))
+
 ## v2.1.2
 
 - Update dependencies
