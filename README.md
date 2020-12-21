@@ -50,6 +50,10 @@ An array of variables that will completely override the given set of environment
 
 The assumed environmental variables, defaults to `process.env`.
 
+#### `opts.metadatakey`
+
+Store the environmental variables under a `metadata[metadatakey]` instead of merging into `metadata`.
+
 ## Example
 
 The following example uses [Jade](http://jade-lang.com) and [Metalsmith JSTransformer](https://github.com/RobLoach/metalsmith-jstransformer):
