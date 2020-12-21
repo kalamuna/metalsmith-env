@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-env",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Metalsmith Environmental Variables Plugin",
   "files": [
     "index.js"

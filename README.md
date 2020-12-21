@@ -58,8 +58,8 @@ Store the environmental variables under a `metadata[metadatakey]` instead of mer
 
 The following example uses [Jade](http://jade-lang.com) and [Metalsmith JSTransformer](https://github.com/RobLoach/metalsmith-jstransformer):
 
-### `index.jade`
-``` jade
+### `index.pug`
+``` pug
 ---
 title: Environmental Variables
 ---

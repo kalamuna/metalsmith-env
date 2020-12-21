@@ -1,8 +1,9 @@
 # Changelog
 
-## v2.2.0 - Unreleased
+## v2.2.0 - 2020-12-21
 
-- Allow storing the environmental variables under a `metadata[metadatakey]` instead of `metadata` (by [webketje](https://github.com/webketje))
+- Allow storing the environment variables under a `metadata[metadatakey]` instead of `metadata`. See `opts.metadatakey` for more details.
+  - By [webketje](https://github.com/webketje)
 
 ## v2.1.2
 
